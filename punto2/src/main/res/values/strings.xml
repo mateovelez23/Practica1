@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Registro</string>
+    <string name="Login">Login</string>
+    <string name="Password">Password</string>
+    <string name="Repetir">Repetir password</string>
+    <string name="Correo">Correo electrónico</string>
+    <string name="Formulario">Formulario</string>
+    <string name="Aceptar">Aceptar</string>
+    <string name="Registro">Punto2</string>
+    <string name="Lugar">Lugar de nacimiento</string>
+    <string name="info">Información digitada</string>
+
+    <string name="Resultado">Resultado</string>
+    <string name="Numero_1">Número 1</string>
+    <string name="Numero_2">Número 2</string>
+    <string name="igual">=</string>
+    <string name="mas">+</string>
+
+    <string name="Masculino">Masculino</string>
+    <string name="Femenino">Femenino</string>
+    <string name="Comer">Comer</string>
+    <string name="Cine">Cine</string>
+    <string name="Deporte">Deporte</string>
+    <string name="Dormir">Dormir</string>
+    <string name="Sexo">Sexo</string>
+    <string name="Hobbies">Hobbies</string>
+    <string name="Fecha">Fecha de nacimiento</string>
+    <string name="calendario">Abrir calendario</string>
+
+
+    <string-array name="ciudad_array">
+        <item>Medellin</item>
+        <item>Bogota</item>
+        <item>Cali</item>
+        <item>Pereira</item>
+        <item>Armenia</item>
+        <item>Manizales</item>
+        <item>Barranquilla</item>
+        <item>Santa Marta</item>
+        <item>Cartagena</item>
+        <item>Valledupar</item>
+        <item>Pasto</item>
+        <item>Villavicencio</item>
+    </string-array>
+</resources>

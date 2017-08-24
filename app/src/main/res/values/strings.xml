@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Punto1</string>
+    <string name="Cuadro">Cuadro</string>
+    <string name="Circulo">Círculo</string>
+    <string name="Triangulo">Triángulo</string>
+    <string name="Cubo">Cubo</string>
+    <string name="Titulo">Cálculo de Figuras</string>
+    <string name="Calcular">Calcular</string>
+    <string name="perimetro">Perímetro</string>
+    <string name="area">Área</string>
+    <string name="volumen">Volumen</string>
+</resources>
