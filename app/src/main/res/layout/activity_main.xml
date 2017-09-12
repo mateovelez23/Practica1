@@ -6,189 +6,188 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="2sp"
     tools:context="com.mateo_velez.practica1.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
-        android:orientation="vertical">
+        android:layout_weight="1">
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="match_parent"
             android:gravity="center"
+            android:textAllCaps="true"
             android:text="@string/Titulo"
             android:textColor="@color/black"
             android:textSize="25sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_margin="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/rCuadro"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:onClick="onRadioButtonClicked"
-                android:text="@string/Cuadro" />
-
-            <RadioButton
-                android:id="@+id/rCirculo"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:onClick="onRadioButtonClicked"
-                android:text="@string/Circulo" />
-
-            <RadioButton
-                android:id="@+id/rTriangulo"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:onClick="onRadioButtonClicked"
-                android:text="@string/Triangulo" />
-
-            <RadioButton
-                android:id="@+id/rCubo"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:onClick="onRadioButtonClicked"
-                android:text="@string/Cubo" />
-        </RadioGroup>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:layout_margin="2sp">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:id="@+id/taltura"
-                android:visibility="gone"/>
-
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:id="@+id/ealtura"
-                android:inputType="numberDecimal"
-                android:visibility="gone"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:layout_margin="2sp">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:id="@+id/tbase"
-                android:visibility="gone"/>
-
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:id="@+id/ebase"
-                android:inputType="numberDecimal"
-                android:visibility="gone"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:layout_margin="2sp">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:id="@+id/tlado1"
-                android:visibility="gone"/>
-
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:id="@+id/elado1"
-                android:inputType="numberDecimal"
-                android:visibility="gone"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:layout_margin="2sp">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:id="@+id/tlado2"
-                android:visibility="gone"/>
-
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:id="@+id/elado2"
-                android:inputType="numberDecimal"
-                android:visibility="gone"/>
-        </LinearLayout>
-
+            android:textStyle="bold"/>
     </LinearLayout>
 
-        <Button
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rCuadro"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_gravity="center"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="HacerCalculo"
-            android:text="@string/Calcular"
-            android:textSize="15sp"/>
+            android:onClick="onRadioButtonClicked"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:text="@string/Cuadro" />
+        <RadioButton
+            android:id="@+id/rCirculo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:text="@string/Circulo" />
+        <RadioButton
+            android:id="@+id/rTriangulo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:text="@string/Triangulo" />
+        <RadioButton
+            android:id="@+id/rCubo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:text="@string/Cubo" />
+    </RadioGroup>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal"
-        android:layout_margin="2sp">
+        android:layout_marginLeft="7sp">
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:id="@+id/tbase"
+            android:visibility="gone"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:id="@+id/ebase"
+            android:inputType="numberDecimal"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="7sp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:id="@+id/taltura"
+            android:visibility="gone"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:id="@+id/ealtura"
+            android:inputType="numberDecimal"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="7sp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:id="@+id/tlado1"
+            android:visibility="gone"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:id="@+id/elado1"
+            android:inputType="numberDecimal"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="7sp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:id="@+id/tlado2"
+            android:visibility="gone"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:id="@+id/elado2"
+            android:inputType="numberDecimal"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:onClick="HacerCalculo"
+        android:text="@string/Calcular"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="7sp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
             android:id="@+id/tperimetro"
             android:text="@string/perimetro"
             android:visibility="gone"/>
-
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:gravity="center_vertical"
             android:id="@+id/eperimetro"
             android:visibility="gone"/>
 
@@ -199,20 +198,20 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal"
-        android:layout_margin="2sp">
-
+        android:layout_marginLeft="7sp">
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:gravity="center_vertical"
             android:id="@+id/tarea"
             android:text="@string/area"
             android:visibility="gone"/>
-
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:gravity="center_vertical"
             android:id="@+id/earea"
             android:visibility="gone"/>
     </LinearLayout>
@@ -222,19 +221,20 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal"
-        android:layout_margin="2sp">
+        android:layout_marginLeft="7sp">
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:gravity="center_vertical"
             android:id="@+id/tvolumen"
             android:text="@string/volumen"
             android:visibility="gone"/>
-
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:gravity="center_vertical"
             android:id="@+id/evolumen"
             android:visibility="gone"/>
     </LinearLayout>

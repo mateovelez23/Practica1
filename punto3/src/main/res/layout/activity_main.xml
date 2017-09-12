@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="5sp"
     tools:context="com.mateo_velez.punto3.MainActivity">
 
     <LinearLayout
@@ -17,10 +18,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/eResultado"
+            android:id="@+id/tResultado"
+            android:gravity="center_vertical"
             android:enabled="false"
+            android:textSize="60sp"
             android:layout_margin="2dp"
             android:text="@string/cero"
+            android:textColor="@color/black"
             />
 
     </LinearLayout>
@@ -212,56 +216,56 @@
         android:orientation="horizontal">
 
         <Button
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:text="."
-        android:background="@color/colorPrimary"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:layout_marginRight="2dp"
-        android:layout_marginBottom="2dp"
-        android:id="@+id/bpunto"
-        android:onClick="punto"/>
-
-        <Button
+            android:id="@+id/bpunto"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="0"
-            android:background="@color/colorPrimary"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:layout_marginRight="2dp"
             android:layout_marginBottom="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:onClick="punto"
+            android:text="."
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Button
             android:id="@+id/b0"
-            android:onClick="cero"/>
-
-        <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="="
-            android:background="@color/colorPrimary"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:layout_marginRight="2dp"
             android:layout_marginBottom="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:onClick="cero"
+            android:text="0"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Button
             android:id="@+id/bigual"
-            android:onClick="igual"/>
-
-        <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="/"
-            android:background="@color/colorPrimary"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:layout_marginRight="2dp"
             android:layout_marginBottom="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:onClick="igual"
+            android:text="="
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Button
             android:id="@+id/bdividido"
-            android:onClick="div"/>
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:onClick="div"
+            android:text="/"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 </LinearLayout>

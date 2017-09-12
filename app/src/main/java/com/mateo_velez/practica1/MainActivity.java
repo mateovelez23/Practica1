@@ -1,11 +1,11 @@
 package com.mateo_velez.practica1;
-
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,9 +41,9 @@ public class MainActivity extends AppCompatActivity {
         id = view.getId();
 
         if (id == R.id.rCuadro){
-            tbase.setText("Lado");
+            tbase.setText(R.string.Lado);
             tbase.setTextSize(15);
-            ebase.setHint("medida del lado");
+            ebase.setHint(R.string.medidalado);
             ebase.setTextSize(12);
             tbase.setVisibility(View.VISIBLE);
             ebase.setVisibility(View.VISIBLE);
@@ -56,9 +56,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (id == R.id.rCirculo){
-            tbase.setText("Radio");
+            tbase.setText(R.string.Radio);
             tbase.setTextSize(15);
-            ebase.setHint("medida del radio");
+            ebase.setHint(R.string.medidaradio);
             ebase.setTextSize(12);
             tbase.setVisibility(View.VISIBLE);
             ebase.setVisibility(View.VISIBLE);
@@ -71,36 +71,36 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (id == R.id.rTriangulo){
-            tbase.setText("Base (Lado 1)");
+            tbase.setText(R.string.Base);
             tbase.setTextSize(15);
-            ebase.setHint("medida de base (lado 1)");
+            ebase.setHint(R.string.medidabase);
             ebase.setTextSize(12);
             tbase.setVisibility(View.VISIBLE);
             ebase.setVisibility(View.VISIBLE);
-            taltura.setText("Altura");
+            taltura.setText(R.string.Altura);
             taltura.setTextSize(15);
-            ealtura.setHint("medida de la altura");
+            ealtura.setHint(R.string.medidaaltura);
             ealtura.setTextSize(12);
             taltura.setVisibility(View.VISIBLE);
             ealtura.setVisibility(View.VISIBLE);
-            tlado1.setText("Lado 2");
+            tlado1.setText(R.string.Lado2);
             tlado1.setTextSize(15);
-            elado1.setHint("medida del lado 2");
+            elado1.setHint(R.string.medidalado2);
             elado1.setTextSize(12);
             tlado1.setVisibility(View.VISIBLE);
             elado1.setVisibility(View.VISIBLE);
-            tlado2.setText("Lado 3");
+            tlado2.setText(R.string.Lado3);
             tlado2.setTextSize(15);
-            elado2.setHint("medida del lado 3");
+            elado2.setHint(R.string.medidalado3);
             elado2.setTextSize(12);
             tlado2.setVisibility(View.VISIBLE);
             elado2.setVisibility(View.VISIBLE);
         }
 
         if (id == R.id.rCubo){
-            tbase.setText("Lado");
+            tbase.setText(R.string.Lado);
             tbase.setTextSize(15);
-            ebase.setHint("medida del lado");
+            ebase.setHint(R.string.medidalado);
             ebase.setTextSize(12);
             tbase.setVisibility(View.VISIBLE);
             ebase.setVisibility(View.VISIBLE);
@@ -118,22 +118,22 @@ public class MainActivity extends AppCompatActivity {
      if (TextUtils.isEmpty(ebase.getText().toString()) && (id==R.id.rCuadro || id==R.id.rCirculo
              || id==R.id.rCubo || (id==R.id.rTriangulo))){
          ebase.setError("Ingrese un valor");
-         return;
+
      }
 
      else if ((TextUtils.isEmpty(ealtura.getText().toString())) && (id==R.id.rTriangulo)){
          ealtura.setError("Ingrese un valor");
-         return;
+
         }
 
      else if(TextUtils.isEmpty(elado1.getText().toString()) && (id==R.id.rTriangulo)){
          elado1.setError("Ingrese un valor");
-         return;
+
         }
 
      else if (TextUtils.isEmpty(elado2.getText().toString()) && (id==R.id.rTriangulo)){
             elado2.setError("Ingrese un valor");
-         return;
+
         }
 
      else {

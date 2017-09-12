@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         eNombre = (EditText) findViewById(R.id.eNombre);
         eClave = (EditText) findViewById(R.id.eClave);
         eConfirmar = (EditText) findViewById(R.id.eConfirmar);
@@ -67,7 +66,6 @@ public class MainActivity extends AppCompatActivity{
         });
 
 
-
         bFecha.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
                 showDialog(DATE_DIALOG_ID);
@@ -78,28 +76,22 @@ public class MainActivity extends AppCompatActivity{
 
     public static class DatePickerFragment extends DialogFragment
             implements DatePickerDialog.OnDateSetListener {
-
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             // Use the current date as the default date in the picker
             int year=Y, month=M, day=D;
-            /*final Calendar c = Calendar.getInstance();
-            int year = c.get(Calendar.YEAR);
-            int month = c.get(Calendar.MONTH);
-            int day = c.get(Calendar.DAY_OF_MONTH);*/
+            //final Calendar c = Calendar.getInstance();
+            //int year = c.get(Calendar.YEAR);
+            //int month = c.get(Calendar.MONTH);
+            //int day = c.get(Calendar.DAY_OF_MONTH);
 
             // Create a new instance of DatePickerDialog and return it
             return new DatePickerDialog(getActivity(), this, year, month, day);
         }
-
         public void onDateSet(DatePicker view, int year, int month, int day) {
             // Do something with the date chosen by the user
-
         }
     }
-
-
-//prueba
 
     protected Dialog onCreateDialog(int id) {
         switch (id) {
@@ -117,13 +109,11 @@ public class MainActivity extends AppCompatActivity{
         }
     };
 
-
-
-
     public void showDatePickerDialog(View v) {
         DialogFragment newFragment = new DatePickerFragment();
         newFragment.show(getSupportFragmentManager(), "datePicker");
     }
+
 
     public void onRadioButtonClicked(View view) {
         id = view.getId();
@@ -144,34 +134,34 @@ public class MainActivity extends AppCompatActivity{
         hobbies = "";
 
         if(TextUtils.isEmpty(eNombre.getText().toString())){
-            tInformacion.setText("Ingrese el nombre de usuario");
+            tInformacion.setText(R.string.ingreseUsuario);
         }
 
         else if(TextUtils.isEmpty(eClave.getText().toString())){
-            tInformacion.setText("Ingrese la contraseña");
+            tInformacion.setText(R.string.ingreseClave);
         }
 
         else if(TextUtils.isEmpty(eConfirmar.getText().toString())){
-            tInformacion.setText("Vuelva a escribir la contraseña");
+            tInformacion.setText(R.string.reingreseClave);
         }
 
         else if(!(eClave.getText().toString()).equals(eConfirmar.getText().toString())){
-            tInformacion.setText("La contraseña no concuerda");
+            tInformacion.setText(R.string.claveErrada);
         }
 
         else if(TextUtils.isEmpty(eCorreo.getText().toString())){
-            tInformacion.setText("Escriba su correo electrónico");
+            tInformacion.setText(R.string.ingreseCorreo);
         }
 
         else if(D==0){
-            tInformacion.setText("Seleccione la fecha");
+            tInformacion.setText(R.string.fecha);
         }
 
         else if(id==0){
-            tInformacion.setText("Seleccione su sexo");
+            tInformacion.setText(R.string.sexo);
         }
         else if(!cCine.isChecked() & !cComer.isChecked() & !cDeporte.isChecked() & !cDormir.isChecked()){
-            tInformacion.setText("Seleccione al menos un hobbie");
+            tInformacion.setText(R.string.hobbie);
         }
 
         else {

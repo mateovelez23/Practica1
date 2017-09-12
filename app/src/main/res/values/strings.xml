@@ -9,4 +9,16 @@
     <string name="perimetro">Perímetro</string>
     <string name="area">Área</string>
     <string name="volumen">Volumen</string>
+    <string name="Lado">Lado</string>
+    <string name="Lado2">Lado2</string>
+    <string name="Lado3">Lado3</string>
+    <string name="medidalado">Medida del Lado</string>
+    <string name="medidaradio">Medida del radio</string>
+    <string name="Radio">Radio</string>
+    <string name="Base">Base (Lado 1)</string>
+    <string name="medidabase">Medida de la base (Lado 1)</string>
+    <string name="Altura">Altura</string>
+    <string name="medidaaltura">Medida de la Altura</string>
+    <string name="medidalado2">Medida del Lado 2</string>
+    <string name="medidalado3">Medida del Lado 3</string>
 </resources>

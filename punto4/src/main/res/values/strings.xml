@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Punto4</string>
+    <string name="Calcular">Calculadora de Resistencias</string>
+    <string name="tol">Tolerancia</string>
+    <string name="b1">Banda 1</string>
+    <string name="b2">Banda 2</string>
+    <string name="b3">Banda 3</string>
+    <string name="Valor">Valor banda:</string>
+    <string name="ValorR">Valor resistencia</string>
+    <string name="ohm">ohm</string>
+    <string name="Tol">Tolerancia: +/- </string>
 </resources>

@@ -26,6 +26,14 @@
     <string name="Hobbies">Hobbies</string>
     <string name="Fecha">Fecha de nacimiento</string>
     <string name="calendario">Abrir calendario</string>
+    <string name="ingreseUsuario">Ingrese nombre de usuario</string>
+    <string name="ingreseClave">Ingrese la contraseña</string>
+    <string name="reingreseClave">Vuelva a escribir la contraseña</string>
+    <string name="claveErrada">La contraseña no coincide, vuelva a escribirla</string>
+    <string name="ingreseCorreo">Escriba su correo electrónico</string>
+    <string name="fecha">Seleccione su fecha de nacimiento</string>
+    <string name="sexo">Seleccione su sexo</string>
+    <string name="hobbie">Seleccione al menos un hobbie</string>
 
 
     <string-array name="ciudad_array">
